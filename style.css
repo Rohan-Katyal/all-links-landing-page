@@ -35,8 +35,8 @@ header {
 header h1 {
   margin: 0;
   font-weight: 700;
-  /* font-size: 1.8rem; */
-  font-size: 18rem;
+  font-size: 1.8vw;
+  /* font-size: 18rem; */
 }
 
 /* Back button top-left of header */
