@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Shikshami Landing Page</title>
+  <link rel="stylesheet" href="style.css"/>
+</head>
+<body>
+  <div class="main-container">
+    <header>
+      <button id="back-btn" class="back-btn" onclick="goBack()" aria-label="Go Back">← Back</button>
+      <h1>Welcome to Shikshami</h1>
+    </header>
+
+    <div id="btn-group" class="btn-group">
+      <button class="btn modern" onclick="showSection('community', this)">Community</button>
+      <button id="official-btn" class="btn classic" onclick="showSection('officials', this)">Officials</button>
+      <button id="demo-btn" class="btn sleek" onclick="showSection('book-demo', this)">Book Demo</button>
+      <button id="media-btn" class="btn modern" onclick="showSection('social', this)">Social Media</button>
+    </div>
+
+    <section id="content-section">
+      <div id="community" class="section hidden">
+        <h2>Join Our Community</h2>
+        <ul>
+          <li><a href="https://wa.me/your-link" target="_blank">WhatsApp Channel</a></li>
+          <li><a href="https://t.me/your-telegram" target="_blank">Telegram Group</a></li>
+          <li><a href="https://facebook.com/your-page" target="_blank">Facebook Page</a></li>
+        </ul>
+      </div>
+
+      <div id="officials" class="section hidden">
+        <h2>Our Official Sites</h2>
+        <ul>
+          <li><a href="https://your-official-site.com" target="_blank">Main Website</a></li>
+          <li><a href="https://portal.shikshami.com" target="_blank">Student Portal</a></li>
+        </ul>
+      </div>
+
+      <div id="book-demo" class="section hidden">
+        <h2>Book a Free Demo</h2>
+        <a href="/book-demo.html" class="demo-link">Go to Booking Page</a>
+      </div>
+
+      <div id="social" class="section hidden">
+        <h2>Follow Us</h2>
+        <ul>
+          <li><a href="https://instagram.com/your-profile" target="_blank">Instagram</a></li>
+          <li><a href="https://facebook.com/your-page" target="_blank">Facebook</a></li>
+          <li><a href="https://youtube.com/your-channel" target="_blank">YouTube</a></li>
+          <li><a href="https://x.com/your-profile" target="_blank">X (Twitter)</a></li>
+        </ul>
+      </div>
+    </section>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
