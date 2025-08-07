@@ -19,7 +19,7 @@ body, html {
   width: 90%;
   max-width: 100%;
   text-align: center;
-  padding: 2.342vw;
+  padding: 2rem;
   box-sizing: border-box;
   position: relative;
 }
@@ -29,14 +29,13 @@ header {
   align-items: center;
   justify-content: center;
   position: relative;
-  margin-bottom: 2.342vw;
+  margin-bottom: 2rem;
 }
 
 header h1 {
   margin: 0;
   font-weight: 700;
-  font-size: 10vw;
-  /* font-size: 18rem; */
+  font-size: 5vw;
 }
 
 /* Back button top-left of header */
@@ -49,9 +48,9 @@ header h1 {
   color: white;
   border: none;
   border-radius: 6px;
-  padding: 0.469vw 0.937vw;
+  padding: 0.4rem 0.8rem;
   cursor: pointer;
-  font-size: 1.171vw;
+  font-size: 2vw;
   opacity: 0;
   pointer-events: none;
   transition: opacity 0.4s ease;
@@ -67,20 +66,22 @@ header h1 {
 .btn-group {
   display: flex;
   flex-direction: column;
-  gap: 1.171vw;
-  margin-bottom: 2.342vw;
+  gap: 1rem;
+  margin-bottom: 2rem;
 }
 
 .btn {
+
   position: relative;
   z-index: 5;
-  padding: 0.937vw 1.757vw;
+
+  padding: 0.8rem 1.5rem;
   border-radius: 10px;
   font-weight: bold;
   cursor: pointer;
   width: 100%;
   box-sizing: border-box;
-  font-size: 1.288vw;
+  font-size: 3vw;
   text-align: center;
   background-clip: padding-box;
   transition: transform 1s ease, opacity 0.5s ease;
@@ -100,7 +101,7 @@ header h1 {
 }
 
 .btn.sleek {
-  background: transparent;
+  background: white;
   color: var(--clr-main);
   border: 2px solid var(--clr-main);
 }
@@ -123,31 +124,43 @@ header h1 {
   pointer-events: auto;
 }
 
+#community-btn.active{
+  transform: translateY(-4vw);
+}
+
 #official-btn.active{
-  transform: translateY(-4.684vw);
+  transform: translateY(-10vw);
   transition: transform 0.4 ease-in-out;
 }
 
 #demo-btn.active{
-  transform: translateY(-5.855vw);
+  transform: translateY(-20vw);
   transition: transform 0.4 ease-in-out;
 }
 
 #media-btn.active{
-  transform: translateY(-15.223vw);
+  transform: translateY(-46vw);
   transition: transform 1 ease-in-out;
 }
 
 /* Section styling */
 .section {
   position: absolute;
-  bottom: 100px;
+  bottom: 50px;
   opacity: 0;
   transform: translateY(20px);
   transition: opacity 1s ease, transform 0.7s ease;
   pointer-events: none;
   text-align: left;
   z-index: 0;
+}
+
+.section#officials{
+  bottom: 80px;
+}
+
+.section#book-demo{
+  bottom: 100px;
 }
 
 .section.active {
@@ -159,17 +172,17 @@ header h1 {
 
 .section h2 {
   margin-top: 0;
-  font-size: 1.64vw;
+  font-size: 1.4rem;
 }
 
 /* Links styling */
 .section ul {
-  padding-left: 1.171vw;
-  margin-top: 0.586vw;
+  padding-left: 1rem;
+  margin-top: 0.5rem;
 }
 
 .section ul li {
-  margin-bottom: 0.469vw;
+  margin-bottom: 0.4rem;
 }
 
 .section a {
@@ -180,6 +193,8 @@ header h1 {
 .section a:hover {
   text-decoration: underline;
 }
+
+
 
 /* Demo link styling */
 .demo-link {
