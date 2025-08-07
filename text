@@ -1,0 +1,6 @@
+Convert every rem value to vw value with proper calculation in the following CSS file and don't directly replace the rem to vw.
+
+Make sure to provide the full file as the result to help copy paste directly and no code should be ultered, 
+
+CSS :
+
